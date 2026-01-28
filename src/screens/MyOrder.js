@@ -4,7 +4,7 @@ export default function MyOrder() {
   const [orderData, setOrderData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/myorderData", {
+    fetch("https://meal-mate-food-delivery-backend.onrender.com/api/myorderData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
